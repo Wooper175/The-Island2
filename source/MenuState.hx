@@ -20,7 +20,7 @@ class MenuState extends FlxState
 	override public function create():Void
 	{
 		super.create();
-		button1 = new FlxButton(0, 0, "Puzzle Demo 2", clickPlay);
+		button1 = new FlxButton(0, 0, "Puzzle Demo 3", clickPlay);
 		button1.screenCenter();
 		add(button1);
 		 
