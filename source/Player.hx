@@ -1,10 +1,13 @@
 package;
 
+import flixel.addons.api.FlxKongregate;
 import flixel.FlxSprite;
 import flixel.util.FlxColor;
 import flixel.FlxG;
 import flixel.util.FlxAngle;
 import flixel.FlxObject;
+import flixel.util.FlxMath;
+import openfl.geom.Point;
 
 /**
  * ...
@@ -35,6 +38,8 @@ class Player extends FlxSprite
 		setSize(20, 20);
 		offset.set(5, 30);
 		
+		this.facing = FlxObject.DOWN;
+		
 		
 	}
 	
@@ -49,6 +54,7 @@ class Player extends FlxSprite
 		_down = FlxG.keys.anyPressed(["DOWN", "S"]);
 		_left = FlxG.keys.anyPressed(["LEFT", "A"]);
 		_right = FlxG.keys.anyPressed(["RIGHT", "D"]);
+		
 		
 		if (_up && _down)
 			_up = _down = false;

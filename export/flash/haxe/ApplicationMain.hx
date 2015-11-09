@@ -35,6 +35,10 @@ class ApplicationMain {
 		types.push (AssetType.TEXT);
 		
 		
+		urls.push ("assets/ground.csv");
+		types.push (AssetType.TEXT);
+		
+		
 		urls.push ("assets/images/cave01.png");
 		types.push (AssetType.IMAGE);
 		
@@ -60,6 +64,26 @@ class ApplicationMain {
 		
 		
 		urls.push ("assets/sounds/sounds-go-here.txt");
+		types.push (AssetType.TEXT);
+		
+		
+		urls.push ("assets/testmap.tmx");
+		types.push (AssetType.TEXT);
+		
+		
+		urls.push ("assets/testmap2.tmx");
+		types.push (AssetType.TEXT);
+		
+		
+		urls.push ("assets/testmap3.tmx");
+		types.push (AssetType.TEXT);
+		
+		
+		urls.push ("assets/testmap4.tmx");
+		types.push (AssetType.TEXT);
+		
+		
+		urls.push ("assets/testmap5.tmx");
 		types.push (AssetType.TEXT);
 		
 		

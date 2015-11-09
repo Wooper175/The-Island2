@@ -48,6 +48,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
 		className.set ("assets/endeligt.oel", __ASSET__assets_endeligt_oel);
 		type.set ("assets/endeligt.oel", AssetType.TEXT);
+		className.set ("assets/ground.csv", __ASSET__assets_ground_csv);
+		type.set ("assets/ground.csv", AssetType.TEXT);
 		className.set ("assets/images/cave01.png", __ASSET__assets_images_cave01_png);
 		type.set ("assets/images/cave01.png", AssetType.IMAGE);
 		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
@@ -62,6 +64,16 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
 		className.set ("assets/sounds/sounds-go-here.txt", __ASSET__assets_sounds_sounds_go_here_txt);
 		type.set ("assets/sounds/sounds-go-here.txt", AssetType.TEXT);
+		className.set ("assets/testmap.tmx", __ASSET__assets_testmap_tmx);
+		type.set ("assets/testmap.tmx", AssetType.TEXT);
+		className.set ("assets/testmap2.tmx", __ASSET__assets_testmap2_tmx);
+		type.set ("assets/testmap2.tmx", AssetType.TEXT);
+		className.set ("assets/testmap3.tmx", __ASSET__assets_testmap3_tmx);
+		type.set ("assets/testmap3.tmx", AssetType.TEXT);
+		className.set ("assets/testmap4.tmx", __ASSET__assets_testmap4_tmx);
+		type.set ("assets/testmap4.tmx", AssetType.TEXT);
+		className.set ("assets/testmap5.tmx", __ASSET__assets_testmap5_tmx);
+		type.set ("assets/testmap5.tmx", AssetType.TEXT);
 		className.set ("assets/sounds/beep.mp3", __ASSET__assets_sounds_beep_mp3);
 		type.set ("assets/sounds/beep.mp3", AssetType.MUSIC);
 		className.set ("assets/sounds/flixel.mp3", __ASSET__assets_sounds_flixel_mp3);
@@ -76,6 +88,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		type.set (id, AssetType.TEXT);
 		id = "assets/endeligt.oel";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/ground.csv";
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
@@ -107,6 +123,26 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
+		id = "assets/testmap.tmx";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/testmap2.tmx";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/testmap3.tmx";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/testmap4.tmx";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/testmap5.tmx";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
 		id = "assets/sounds/beep.mp3";
 		path.set (id, id);
 		
@@ -133,6 +169,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		
+		
+		
+		
 		#end
 		
 		#if (windows || mac || linux)
@@ -144,6 +186,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/endeligt.oel", __ASSET__assets_endeligt_oel);
 		type.set ("assets/endeligt.oel", AssetType.TEXT);
+		
+		className.set ("assets/ground.csv", __ASSET__assets_ground_csv);
+		type.set ("assets/ground.csv", AssetType.TEXT);
 		
 		className.set ("assets/images/cave01.png", __ASSET__assets_images_cave01_png);
 		type.set ("assets/images/cave01.png", AssetType.IMAGE);
@@ -165,6 +210,21 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/sounds/sounds-go-here.txt", __ASSET__assets_sounds_sounds_go_here_txt);
 		type.set ("assets/sounds/sounds-go-here.txt", AssetType.TEXT);
+		
+		className.set ("assets/testmap.tmx", __ASSET__assets_testmap_tmx);
+		type.set ("assets/testmap.tmx", AssetType.TEXT);
+		
+		className.set ("assets/testmap2.tmx", __ASSET__assets_testmap2_tmx);
+		type.set ("assets/testmap2.tmx", AssetType.TEXT);
+		
+		className.set ("assets/testmap3.tmx", __ASSET__assets_testmap3_tmx);
+		type.set ("assets/testmap3.tmx", AssetType.TEXT);
+		
+		className.set ("assets/testmap4.tmx", __ASSET__assets_testmap4_tmx);
+		type.set ("assets/testmap4.tmx", AssetType.TEXT);
+		
+		className.set ("assets/testmap5.tmx", __ASSET__assets_testmap5_tmx);
+		type.set ("assets/testmap5.tmx", AssetType.TEXT);
 		
 		className.set ("assets/sounds/beep.mp3", __ASSET__assets_sounds_beep_mp3);
 		type.set ("assets/sounds/beep.mp3", AssetType.MUSIC);
@@ -744,6 +804,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 @:keep @:bind #if display private #end class __ASSET__assets_data_data_goes_here_txt extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_endeligt_oel extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__assets_ground_csv extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_cave01_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_images_go_here_txt extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_player_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -751,6 +812,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__assets_images_switch_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_sounds_sounds_go_here_txt extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__assets_testmap_tmx extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__assets_testmap2_tmx extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__assets_testmap3_tmx extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__assets_testmap4_tmx extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__assets_testmap5_tmx extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_sounds_beep_mp3 extends flash.media.Sound { }
 @:keep @:bind #if display private #end class __ASSET__assets_sounds_flixel_mp3 extends flash.media.Sound { }
 
@@ -758,6 +824,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 #elseif html5
 
 #if openfl
+
+
+
+
+
+
 
 
 
@@ -783,6 +855,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 @:file("assets/data/data-goes-here.txt") class __ASSET__assets_data_data_goes_here_txt extends lime.utils.ByteArray {}
 @:file("assets/endeligt.oel") class __ASSET__assets_endeligt_oel extends lime.utils.ByteArray {}
+@:file("assets/ground.csv") class __ASSET__assets_ground_csv extends lime.utils.ByteArray {}
 @:bitmap("assets/images/cave01.png") class __ASSET__assets_images_cave01_png extends lime.graphics.Image {}
 @:file("assets/images/images-go-here.txt") class __ASSET__assets_images_images_go_here_txt extends lime.utils.ByteArray {}
 @:bitmap("assets/images/player.png") class __ASSET__assets_images_player_png extends lime.graphics.Image {}
@@ -790,6 +863,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:bitmap("assets/images/switch.png") class __ASSET__assets_images_switch_png extends lime.graphics.Image {}
 @:file("assets/music/music-goes-here.txt") class __ASSET__assets_music_music_goes_here_txt extends lime.utils.ByteArray {}
 @:file("assets/sounds/sounds-go-here.txt") class __ASSET__assets_sounds_sounds_go_here_txt extends lime.utils.ByteArray {}
+@:file("assets/testmap.tmx") class __ASSET__assets_testmap_tmx extends lime.utils.ByteArray {}
+@:file("assets/testmap2.tmx") class __ASSET__assets_testmap2_tmx extends lime.utils.ByteArray {}
+@:file("assets/testmap3.tmx") class __ASSET__assets_testmap3_tmx extends lime.utils.ByteArray {}
+@:file("assets/testmap4.tmx") class __ASSET__assets_testmap4_tmx extends lime.utils.ByteArray {}
+@:file("assets/testmap5.tmx") class __ASSET__assets_testmap5_tmx extends lime.utils.ByteArray {}
 @:sound("C:/HaxeToolkit/haxe/lib/flixel/3,3,6/assets/sounds/beep.mp3") class __ASSET__assets_sounds_beep_mp3 extends lime.audio.AudioSource {}
 @:sound("C:/HaxeToolkit/haxe/lib/flixel/3,3,6/assets/sounds/flixel.mp3") class __ASSET__assets_sounds_flixel_mp3 extends lime.audio.AudioSource {}
 

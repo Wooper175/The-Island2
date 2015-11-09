@@ -1,12 +1,13 @@
 package;
 
+import GameObject;
 import flixel.FlxSprite;
 
 /**
  * ...
  * @author ...
  */
-class Switch extends FlxSprite
+class Switch extends GameObject
 {
 
 	public var state:Bool;
@@ -17,13 +18,14 @@ class Switch extends FlxSprite
 		loadGraphic(AssetPaths.switch__png, false, 32, 32);
 		
 		setSize(32, 32);
-		offset.set(0, 32);
-		animation.add("active", [1, 2, 3, 4], 6, false);
-		animation.add("deactive", [4, 3, 2, 1], 6, false);
+		offset.set(0, 0);
+		animation.add("active", [1, 2, 3, 4], 4, false);
+		animation.add("deactive", [4, 3, 2, 1], 4, false);
 		
 		state = false;
 	}
-	public function changeState():Void {
+	
+	public override function onAction(S:PlayState):Void {
 		
 		if (state == false) {
 			animation.play("active");
